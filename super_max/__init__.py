@@ -25,7 +25,7 @@ def main():
     df.info()
 
     # Calcualate expected points for each driver from historical data
-    df["Expected Points"] = df["Points"]/RACES
+    df['expected_points'] = df['points']/RACES
     print(df.to_string())
 
 
