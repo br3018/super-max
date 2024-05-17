@@ -14,13 +14,14 @@ def main():
     """
     Main script
     """
-    # Get current working directory
-    cwd = os.getcwd()
+    # Constants
+    RACES = 6
+    
+    # Data url
+    data_url = "https://raw.githubusercontent.com/br3018/super-max/main/race_info.csv"
 
     # Load data
-    data_path = os.path.join(cwd, "race_info.csv")
-    print(data_path)
-    df = pd.read_csv(data_path)
+    df = pd.read_csv(data_url)
     df.info()
 
 
