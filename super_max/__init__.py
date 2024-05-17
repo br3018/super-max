@@ -24,6 +24,10 @@ def main():
     df = pd.read_csv(data_url)
     df.info()
 
+    # Calcualate expected points for each driver from historical data
+    df["Expected Points"] = df["Points"]/RACES
+    print(df.to_string())
+
 
 if __name__ == "__main__":
     main()
