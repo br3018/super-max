@@ -17,7 +17,7 @@ def main():
     """
     # Constants
     # Number of races done so far
-    RACES = 6
+    RACES = 7
     # Number of drivers to select
     NUM_DRIVERS = 5
     # Number of constructors to select
@@ -99,7 +99,6 @@ def main():
     path = os.path.join(cwd, "team_combinations.csv")
     print("Saving teams to {}".format(path))
     team_df.to_csv(path, index=False)
-    
 
 if __name__ == "__main__":
     main()
