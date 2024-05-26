@@ -8,6 +8,7 @@ __license__ = "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007"
 
 import pandas as pd
 import numpy as np 
+import urllib
 import os
 import itertools
 import tensorflow as tf
@@ -39,9 +40,20 @@ def main():
     fantasy_points_url = "https://raw.githubusercontent.com/br3018/super-max/lstm/fantasy_points.csv"
 
     # Load data
-    driver_df = pd.read_csv(driver_data_url)
-    constructor_df = pd.read_csv(constructor_data_url)
-    fantasy_points_df = pd.read_csv(fantasy_points_url)
+    try:
+        driver_df = pd.read_csv(driver_data_url)
+    except urllib.error.URLError as e:
+        print(f"Error fetching driver data: {e}")
+
+    try:
+        constructor_df = pd.read_csv(constructor_data_url)
+    except urllib.error.URLError as e:
+        print(f"Error fetching constructor data: {e}")
+
+    try:
+        fantasy_points_df = pd.read_csv(fantasy_points_url)
+    except urllib.error.URLError as e:
+        print(f"Error fetching fantasy points data: {e}")
 
     # Calculate expected points for each driver from historical data
     driver_df['expected_points'] = driver_df['points'].divide(RACES)
@@ -55,6 +67,9 @@ def main():
     print()
     print(fantasy_points_df.to_string())
     print()
+
+    # Plotting fantasy points data as test
+    fantasy_points_df[['VER', 'SAI', 'LEC']].plot(subplots=True)
 
     """
     # Generate combinations matrix for all drivers
