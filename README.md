@@ -7,4 +7,8 @@ To run, enter most recent race data to constructor_info.csv and driver_info.csv 
 https://fantasy.formula1.com/en/statistics/details?tab=driver&filter=fPoints
 Set COST_CAP according to your current cost cap and RACES according to how many races have happened so far. 
 
+Main branch uses standard method
+
+LSTM branch uses LSTM method to predict driver estimated points before using standard method
+
 Improvements that could be made include incorporating the DRS feature and calculating expected points by number of races each driver has done rather than total. 
