@@ -11,6 +11,8 @@ import numpy as np
 import os
 import itertools
 import tensorflow as tf
+import matplotlib.pyplot as plt
+import matplotlib as mpl
 
 from tensorflow.keras.layers import LSTM
 
