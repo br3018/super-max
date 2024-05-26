@@ -10,6 +10,9 @@ import pandas as pd
 import numpy as np 
 import os
 import itertools
+import tensorflow as tf
+
+from tensorflow.keras.layers import LSTM
 
 def main():
     """
@@ -31,10 +34,12 @@ def main():
     # Data url
     driver_data_url = "https://raw.githubusercontent.com/br3018/super-max/main/driver_info.csv"
     constructor_data_url = "https://raw.githubusercontent.com/br3018/super-max/main/constructor_info.csv"
+    fantasy_points_url = "https://raw.githubusercontent.com/br3018/super-max/lstm/fantasy_points.csv"
 
     # Load data
     driver_df = pd.read_csv(driver_data_url)
     constructor_df = pd.read_csv(constructor_data_url)
+    fantasy_points_df = pd.read_csv(fantasy_points_url)
 
     # Calculate expected points for each driver from historical data
     driver_df['expected_points'] = driver_df['points'].divide(RACES)
@@ -46,7 +51,10 @@ def main():
     print()
     print(constructor_df.to_string())
     print()
+    print(fantasy_points_df.to_string())
+    print()
 
+    """
     # Generate combinations matrix for all drivers
     print("Calculating driver combinations (1/3)")
     driver_combinations = list(itertools.combinations(driver_df['drivers'], 5))
@@ -99,6 +107,7 @@ def main():
     path = os.path.join(cwd, "team_combinations.csv")
     print("Saving teams to {}".format(path))
     team_df.to_csv(path, index=False)
+    """
 
 if __name__ == "__main__":
     main()

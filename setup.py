@@ -11,5 +11,6 @@ setup(
         'numpy',
         'pandas',
         'os',
+        'tensorflow',
     ],
 )
