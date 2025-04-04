@@ -17,13 +17,13 @@ def main():
     """
     # Constants
     # Number of races done so far
-    RACES = 7
+    RACES = 2
     # Number of drivers to select
     NUM_DRIVERS = 5
     # Number of constructors to select
     NUM_CONSTRUCTORS = 2
     # Cost cap
-    COST_CAP = 109.7
+    COST_CAP = 99.0
 
     # Get working directory
     cwd = os.getcwd()
