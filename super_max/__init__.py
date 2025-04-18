@@ -16,14 +16,12 @@ def main():
     Main script
     """
     # Constants
-    # Number of races done so far
-    RACES = 2
     # Number of drivers to select
     NUM_DRIVERS = 5
     # Number of constructors to select
     NUM_CONSTRUCTORS = 2
     # Cost cap
-    COST_CAP = 99.0
+    COST_CAP = 104.0
 
     # Get working directory
     cwd = os.getcwd()
@@ -37,9 +35,9 @@ def main():
     constructor_df = pd.read_csv(constructor_data_url)
 
     # Calculate expected points for each driver from historical data
-    driver_df['expected_points'] = driver_df['points'].divide(RACES)
+    driver_df['expected_points'] = np.divide(driver_df['points'], driver_df['races'])
     # Calculate expected points for each constructor from historical data
-    constructor_df['expected_points'] = constructor_df['points'].divide(RACES)
+    constructor_df['expected_points'] = np.divide(constructor_df['points'], constructor_df['races'])
 
     # Show dataframes
     print(driver_df.to_string())
