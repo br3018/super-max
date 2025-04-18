@@ -1,11 +1,11 @@
 constructors,current_cost,points
-"Red Bull Racing", 25.4, 86
-"Ferrari", 27.1, 13
-"McLaren", 30.6, 172
-"Mercedes", 23.3, 136
-"Aston Martin", 7.3, 5
-"Haas F1 Team", 8.2, 61
-"Alpine", 8.3, -20
-"RB", 8.0, 32
-"Sauber", 6.2, 15
-"Williams", 13.5, 36
+Red Bull Racing,26,178
+Ferrari,27.3,142
+McLaren,31.2,335
+Mercedes,23.9,252
+Aston Martin,7.7,32
+Haas F1 Team,9.4,111
+Alpine,7.9,11
+RB,9.2,68
+Sauber,5.4,-7
+Williams,14.7,68

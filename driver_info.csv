@@ -1,21 +1,21 @@
 drivers,team,current_cost,points
-"Lando Norris", "McLaren", 29.6, 100
-"Kimi Antonelli", "Mercedes", 19.3, 61
-"George Russell", "Mercedes", 21.4, 60
-"Max Verstappen", "Red Bull Racing", 28.6, 59
-"Oscar Piastri", "McLaren", 23.0, 55
-"Lance Stroll", "Aston Martin", 9.3, 33
-"Estaban Ocon", "Alpine", 8.1, 32
-"Alexander Albon", "Williams", 12.8, 28
-"Oliver Bearman", "Haas", 6.7, 22
-"Nico Hulkenberg", "Kick Sauber" 7.6, 22
-"Yuki Tsunoda", "Racing Bulls", 8.4, 6
-"Liam Lawson", "Red Bull Racing", 16.8, 5
-"Lewis Hamilton", "Ferrari", 23.6, 3
-"Charles Leclerc", "Ferrari", 25.3, 0
-"Pierre Gasly", "Alpine", 10.6, -7
-"Isack Hadjar", "Racing Bulls", 5.0, -9
-"Jack Doohan", "Alpine", 6.0, -9
-"Gabriel Bortoleto", "Kick Sauber", 4.8, -11
-"Carlos Sainz", "Williams", 11.9, -11
-"Fernando Alonso", "Aston Martin", 7.6, -36
+Lando Norris," ""McLaren""",30,159
+Kimi Antonelli," ""Mercedes""",19.7,98
+George Russell," ""Mercedes""",22,109
+Max Verstappen," ""Red Bull Racing""",28.8,117
+Oscar Piastri," ""McLaren""",23.4,124
+Lance Stroll," ""Aston Martin""",9.7,42
+Estaban Ocon," ""Alpine""",9.3,48
+Alexander Albon," ""Williams""",12.8,51
+Oliver Bearman," ""Haas""",7.9,48
+Nico Hulkenberg," ""Kick Sauber"" 7.6",7.2,3
+Yuki Tsunoda,"""Red Bull Racing""",16.4,22
+Liam Lawson,"""Racing Bulls""",7.2,7
+Lewis Hamilton," ""Ferrari""",23.2,52
+Charles Leclerc," ""Ferrari""",24.7,40
+Pierre Gasly," ""Alpine""",9.4,6
+Isack Hadjar," ""Racing Bulls""",5.1,4
+Jack Doohan," ""Alpine""",5.6,-1
+Gabriel Bortoleto," ""Kick Sauber""",4.5,-9
+Carlos Sainz," ""Williams""",10.7,-16
+Fernando Alonso," ""Aston Martin""",6.4,-27
