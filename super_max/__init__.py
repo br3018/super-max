@@ -53,8 +53,14 @@ def main():
     driver_combination_escore = np.zeros(len(driver_combinations))
     driver_combination_cost = np.zeros(len(driver_combinations))
     for i, driver_combination in enumerate(driver_combinations):
+        # Find driver with highest expected points in combination (for applying DRS boost)
+        driver_combination = list(driver_combination) # Convert driver combination to list to sort
+        driver_combination.sort(key=lambda x: driver_df[driver_df['drivers'] == x]['expected_points'].values[0], reverse=True)
+        # Calculate expected score and cost for each combination before DRS boost
         driver_combination_escore[i] = driver_df[driver_df['drivers'].isin(driver_combination)]['expected_points'].sum()
         driver_combination_cost[i] = driver_df[driver_df['drivers'].isin(driver_combination)]['current_cost'].sum()
+        # Add double points for driver with highest expected points (DRS boost)
+        driver_combination_escore[i] += driver_df[driver_df['drivers'] == driver_combination[0]]['expected_points'].values[0]
     print("Calculations complete")
     print()
     
@@ -97,6 +103,9 @@ def main():
     path = os.path.join(cwd, "team_combinations.csv")
     print("Saving teams to {}".format(path))
     team_df.to_csv(path, index=False)
+
+    print("Teams saved")
+    print("Apply DRS boost to driver with highest expected points in combination")
 
 if __name__ == "__main__":
     main()
