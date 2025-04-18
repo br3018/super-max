@@ -1,21 +1,21 @@
-drivers,team,current_cost,points
-Lando Norris," ""McLaren""",30,159
-Kimi Antonelli," ""Mercedes""",19.7,98
-George Russell," ""Mercedes""",22,109
-Max Verstappen," ""Red Bull Racing""",28.8,117
-Oscar Piastri," ""McLaren""",23.4,124
-Lance Stroll," ""Aston Martin""",9.7,42
-Estaban Ocon," ""Alpine""",9.3,48
-Alexander Albon," ""Williams""",12.8,51
-Oliver Bearman," ""Haas""",7.9,48
-Nico Hulkenberg," ""Kick Sauber"" 7.6",7.2,3
-Yuki Tsunoda,"""Red Bull Racing""",16.4,22
-Liam Lawson,"""Racing Bulls""",7.2,7
-Lewis Hamilton," ""Ferrari""",23.2,52
-Charles Leclerc," ""Ferrari""",24.7,40
-Pierre Gasly," ""Alpine""",9.4,6
-Isack Hadjar," ""Racing Bulls""",5.1,4
-Jack Doohan," ""Alpine""",5.6,-1
-Gabriel Bortoleto," ""Kick Sauber""",4.5,-9
-Carlos Sainz," ""Williams""",10.7,-16
-Fernando Alonso," ""Aston Martin""",6.4,-27
+drivers,team,current_cost,points,races
+Lando Norris," ""McLaren""",30,159,4
+Kimi Antonelli," ""Mercedes""",19.7,98,4
+George Russell," ""Mercedes""",22,109,4
+Max Verstappen," ""Red Bull Racing""",28.8,117,4
+Oscar Piastri," ""McLaren""",23.4,124,4
+Lance Stroll," ""Aston Martin""",9.7,42,4
+Estaban Ocon," ""Alpine""",9.3,48,4
+Alexander Albon," ""Williams""",12.8,51,4
+Oliver Bearman," ""Haas""",7.9,48,4
+Nico Hulkenberg," ""Kick Sauber"" 7.6",7.2,3,4
+Yuki Tsunoda,"""Red Bull Racing""",16.4,22,2
+Liam Lawson,"""Racing Bulls""",7.2,7,2
+Lewis Hamilton," ""Ferrari""",23.2,52,4
+Charles Leclerc," ""Ferrari""",24.7,40,4
+Pierre Gasly," ""Alpine""",9.4,6,4
+Isack Hadjar," ""Racing Bulls""",5.1,4,4
+Jack Doohan," ""Alpine""",5.6,-1,4
+Gabriel Bortoleto," ""Kick Sauber""",4.5,-9,4
+Carlos Sainz," ""Williams""",10.7,-16,4
+Fernando Alonso," ""Aston Martin""",6.4,-27,4
