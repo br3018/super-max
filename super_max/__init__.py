@@ -21,7 +21,7 @@ def main():
     # Number of constructors to select
     NUM_CONSTRUCTORS = 2
     # Cost cap
-    COST_CAP = 110.4
+    COST_CAP = 116.0
 
     # Get working directory
     cwd = os.getcwd()
